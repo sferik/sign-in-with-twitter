@@ -1,8 +1,13 @@
 *.gem
 *.rbc
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
 .bundle
 .config
 .yardoc
+Icon?
 InstalledFiles
 _yardoc
 coverage
