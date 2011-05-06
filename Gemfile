@@ -7,6 +7,8 @@ gem 'rails', '3.1.0.beta1'
 
 gem 'sqlite3'
 
+gem 'therubyracer-heroku', '0.8.1.pre3'
+
 # Asset template engines
 gem 'sass'
 gem 'coffee-script'
