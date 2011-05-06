@@ -54,6 +54,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     multi_json (1.0.1)
+    pg (0.11.0)
     polyglot (0.3.1)
     rack (1.3.0.beta)
     rack-cache (1.0.1)
@@ -103,6 +104,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-script
   jquery-rails
+  pg
   rails (= 3.1.0.beta1)
   sass
   sqlite3
