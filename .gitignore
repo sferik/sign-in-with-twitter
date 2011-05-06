@@ -1,5 +1,7 @@
 *.gem
 *.rbc
+*.un~
+.*.sw[a-z]
 .DS_Store
 .Spotlight-V100
 .Trashes
@@ -9,6 +11,7 @@
 .yardoc
 Icon?
 InstalledFiles
+Session.vim
 _yardoc
 coverage
 db/*.sqlite3
