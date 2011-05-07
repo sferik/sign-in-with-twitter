@@ -13,7 +13,7 @@ class SessionsControllerTest < ActionController::TestCase
   end
 
   test 'should display profile if session is set' do
-    session['user_info'] = user
+    set_session
     get :show
     assert_not_nil assigns(:user)
     assert_response :success
@@ -43,6 +43,18 @@ class SessionsControllerTest < ActionController::TestCase
     get :error
     assert_equal 'Sign in with Twitter failed!', flash[:error]
     assert_redirected_to root_path
+  end
+
+  test 'should empty session on sign out' do
+    set_session
+    get :destroy
+    assert_empty session
+    assert_equal 'Signed out!', flash[:notice]
+    assert_redirected_to root_path
+  end
+
+  def set_session
+    session['user_info'] = user
   end
 
   def user
