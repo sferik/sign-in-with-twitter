@@ -1,13 +1,18 @@
 Sign in with Twitter
 ====================
 Sign in with Twitter is a very basic Rails 3 application that demonstrates how
-to use the [Sign in with Twitter][siwt] workflow using version 1.x of the
+to use the [Sign in with Twitter][siwt] workflow using version 1 of the
 [twitter gem][twitter] (which has removed built-in OAuth support) and the
 [omniauth gem][omniauth].
 
 [siwt]: http://dev.twitter.com/pages/sign_in_with_twitter
 [twitter]: https://github.com/jnunemaker/twitter
 [omniauth]: https://github.com/intridea/omniauth
+
+Demo
+----
+You can see a running version of the application at
+<http://sign-in-with-twitter.heroku.com/>.
 
 Installation
 ------------
