@@ -9,6 +9,10 @@ to use the [Sign in with Twitter][siwt] workflow using version 1 of the
 [twitter]: https://github.com/jnunemaker/twitter
 [omniauth]: https://github.com/intridea/omniauth
 
+Continuous Integration
+----------------------
+[![Build Status](http://travis-ci.org/sferik/sign-in-with-twitter.png)](http://travis-ci.org/sferik/sign-in-with-twitter)
+
 Demo
 ----
 You can see a running version of the application at
