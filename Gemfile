@@ -16,7 +16,7 @@ gem 'sass'
 gem 'coffee-script'
 
 group :test do
-  # Pretty printed test output
+  gem 'mocha'
   gem 'turn', :require => false
   gem 'ZenTest'
 end
