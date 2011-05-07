@@ -7,7 +7,7 @@ class SessionsControllerTest < ActionController::TestCase
     result['omniauth.auth']['credentials'] = {}
     result['omniauth.auth']['credentials']['token'] = 'abc'
     result['omniauth.auth']['credentials']['secret'] = '123'
-    request.stubs(env: result)
+    request.stubs :env => result
     get :create
     assert_equal 'abc', session[:access_token]
     assert_equal '123', session[:access_secret]
@@ -23,13 +23,13 @@ class SessionsControllerTest < ActionController::TestCase
     stub_request(:get, "https://api.twitter.com/1/users/show.json?screen_name=sferik").
       to_return(:body => File.read(File.expand_path('../../fixtures/user.json', __FILE__)), :status => 200)
     get :show
-    assert_not_nil assigns(:user)
+    assert_not_nil assigns :user
     assert_response :success
     assert_select 'title', 'Sign in with Twitter'
     assert_select 'h1', 'Hello Erik Michaels-Ober'
     assert_select 'h2', 'Profile'
-    assert_select 'dt', count: 13
-    assert_select 'dd', count: 13
+    assert_select 'dt', :count => 13
+    assert_select 'dd', :count => 13
     assert_select 'form' do
       assert_select '[action=?]', '/signout'
       assert_select '[method=?]', 'post'
@@ -57,7 +57,7 @@ class SessionsControllerTest < ActionController::TestCase
 
   test 'should empty session on sign out' do
     get :destroy
-    assert_empty session
+    assert_equal Hash.new, session
     assert_equal 'Signed out!', flash[:notice]
     assert_redirected_to root_path
   end

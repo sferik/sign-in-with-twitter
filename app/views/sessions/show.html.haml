@@ -66,5 +66,5 @@
         = @user.status.text
       via
       = @user.status.source.html_safe
-= form_tag signout_path, method: 'delete' do
+= form_tag signout_path, :method => 'delete' do
   = submit_tag 'Sign out'
