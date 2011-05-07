@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    ZenTest (4.5.0)
     actionmailer (3.1.0.beta1)
       actionpack (= 3.1.0.beta1)
       mail (~> 2.3.0)
@@ -129,6 +130,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ZenTest
   coffee-script
   haml
   oa-oauth

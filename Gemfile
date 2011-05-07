@@ -18,6 +18,7 @@ gem 'coffee-script'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'ZenTest'
 end
 
 group :production do
