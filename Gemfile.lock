@@ -36,13 +36,14 @@ GEM
     ansi (1.2.5)
     arel (2.1.0)
     bcrypt-ruby (2.1.4)
+    bcrypt-ruby (2.1.4-java)
     builder (3.0.0)
     crack (0.1.8)
     erubis (2.7.0)
     faraday (0.6.1)
       addressable (~> 2.2.4)
       multipart-post (~> 1.1.0)
-      rack (< 2, >= 1.1.0)
+      rack (>= 1.1.0, < 2)
     faraday_middleware (0.6.3)
       faraday (~> 0.6.0)
     haml (3.1.1)
@@ -125,6 +126,7 @@ GEM
       crack (>= 0.1.7)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
