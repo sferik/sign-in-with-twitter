@@ -49,6 +49,7 @@ GEM
       rack (< 2, >= 1.1.0)
     faraday_middleware (0.6.3)
       faraday (~> 0.6.0)
+    haml (3.1.1)
     hashie (1.0.0)
     hike (1.0.0)
     i18n (0.6.0beta1)
@@ -136,6 +137,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-script
+  haml
   jquery-rails
   oa-oauth
   pg
