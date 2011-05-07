@@ -1,0 +1,17 @@
+%dl
+  - @user.each do |key, value|
+    %dt
+      = key.titleize
+    %dd
+      - case key
+      - when 'image'
+        = image_tag value, alt: session['user_info']['name']
+      - when 'urls'
+        %ul
+          - value.each do |service, url|
+            %li
+              = link_to service, url
+      - else
+        = value
+= form_tag signout_path, method: 'delete' do
+  = submit_tag 'Sign out'
