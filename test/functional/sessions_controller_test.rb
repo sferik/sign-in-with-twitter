@@ -39,6 +39,12 @@ class SessionsControllerTest < ActionController::TestCase
     assert_redirected_to failure_path
   end
 
+  test 'should display error on failure' do
+    get :error
+    assert_equal 'Sign in with Twitter failed!', flash[:error]
+    assert_redirected_to root_path
+  end
+
   def user
     {'nickname' => 'sferik', 'name' => 'Erik Michaels-Ober', 'location' => 'San Francisco', 'image' => 'http://a0.twimg.com/profile_images/1279736243/Github_Square_normal.jpg', 'description' => 'A mind forever voyaging through strange seas of thought, alone.', 'urls' => {'Website' => 'https://github.com/sferik', 'Twitter' => 'http://twitter.com/sferik'}}
   end
