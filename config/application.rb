@@ -48,6 +48,6 @@ module SignInWithTwitter
     config.active_record.identity_map = true
 
     # Enable the asset pipeline
-    config.assets.enabled = true
+    config.assets.enabled = false
   end
 end
