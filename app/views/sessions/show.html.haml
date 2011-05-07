@@ -1,6 +1,5 @@
 %h1
-  Hello
-  = link_to @user.name, @user.url
+  = "Hello #{@user.name}"
 %h2
   Profile
 %dl
@@ -17,15 +16,22 @@
     Screen name
   %dd
     = @user.screen_name
-  %dt
-    Bio
-  %dd
-    = @user.description
+  - unless @user.description.blank?
+    %dt
+      Bio
+    %dd
+      = @user.description
   - unless @user.location.blank?
     %dt
       Location
     %dd
       = @user.location
+  - unless @user.url.blank?
+    %dt
+      URL
+    %dd
+      %a(href = "#{@user.url}")
+        = @user.url
   %dt
     Profile image
   %dd

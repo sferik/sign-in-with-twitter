@@ -26,8 +26,10 @@ class SessionsControllerTest < ActionController::TestCase
     assert_not_nil assigns(:user)
     assert_response :success
     assert_select 'title', 'Sign in with Twitter'
-    assert_select 'dt', count: 12
-    assert_select 'dd', count: 12
+    assert_select 'h1', 'Hello Erik Michaels-Ober'
+    assert_select 'h2', 'Profile'
+    assert_select 'dt', count: 13
+    assert_select 'dd', count: 13
     assert_select 'form' do
       assert_select '[action=?]', '/signout'
       assert_select '[method=?]', 'post'
