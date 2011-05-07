@@ -5,8 +5,6 @@ gem 'twitter'
 
 gem 'oa-oauth'
 
-gem 'sqlite3'
-
 gem 'therubyracer-heroku', '0.8.1.pre3'
 
 gem 'haml'
