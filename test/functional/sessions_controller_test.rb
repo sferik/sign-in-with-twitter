@@ -1,25 +1,33 @@
 require 'test_helper'
 
 class SessionsControllerTest < ActionController::TestCase
-  test 'should set session on OAuth callback' do
+  test 'should save access token and secret in session on OAuth callback' do
     result = {}
     result['omniauth.auth'] = {}
-    result['omniauth.auth']['user_info'] = user
+    result['omniauth.auth']['credentials'] = {}
+    result['omniauth.auth']['credentials']['token'] = 'abc'
+    result['omniauth.auth']['credentials']['secret'] = '123'
     request.stubs(env: result)
-    get :create, oauth_token: 'abc', oauth_verifier: '123'
-    assert_not_nil session['user_info']
+    get :create
+    assert_equal 'abc', session[:access_token]
+    assert_equal '123', session[:access_secret]
     assert_equal 'Signed in with Twitter!', flash[:notice]
     assert_redirected_to show_path
   end
 
-  test 'should display profile if session is set' do
-    set_session
+  test 'should display profile when authenticated' do
+    session[:access_token] = 'abc'
+    session[:access_secret] = '123'
+    stub_request(:get, 'https://api.twitter.com/1/account/verify_credentials.json').
+      to_return(:body => File.read(File.expand_path('../../fixtures/user.json', __FILE__)), :status => 200)
+    stub_request(:get, "https://api.twitter.com/1/users/show.json?screen_name=sferik").
+      to_return(:body => File.read(File.expand_path('../../fixtures/user.json', __FILE__)), :status => 200)
     get :show
     assert_not_nil assigns(:user)
     assert_response :success
     assert_select 'title', 'Sign in with Twitter'
-    assert_select 'dt', count: user.size
-    assert_select 'dd', count: user.size
+    assert_select 'dt', count: 12
+    assert_select 'dd', count: 12
     assert_select 'form' do
       assert_select '[action=?]', '/signout'
       assert_select '[method=?]', 'post'
@@ -34,7 +42,7 @@ class SessionsControllerTest < ActionController::TestCase
     end
   end
 
-  test 'should redirect to failure path if session is blank' do
+  test 'should redirect to failure path when unauthenticated' do
     get :show
     assert_redirected_to failure_path
   end
@@ -46,18 +54,9 @@ class SessionsControllerTest < ActionController::TestCase
   end
 
   test 'should empty session on sign out' do
-    set_session
     get :destroy
     assert_empty session
     assert_equal 'Signed out!', flash[:notice]
     assert_redirected_to root_path
-  end
-
-  def set_session
-    session['user_info'] = user
-  end
-
-  def user
-    {'nickname' => 'sferik', 'name' => 'Erik Michaels-Ober', 'location' => 'San Francisco', 'image' => 'http://a0.twimg.com/profile_images/1279736243/Github_Square_normal.jpg', 'description' => 'A mind forever voyaging through strange seas of thought, alone.', 'urls' => {'Website' => 'https://github.com/sferik', 'Twitter' => 'http://twitter.com/sferik'}}
   end
 end

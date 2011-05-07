@@ -1,17 +1,64 @@
+%h1
+  Hello
+  = link_to @user.name, @user.url
+%h2
+  Profile
 %dl
-  - @user.each do |key, value|
+  %dt
+    ID
+  %dd
+    = number_with_delimiter @user.id
+  %dt
+    Created
+  %dd
+    = time_ago_in_words(@user.created_at).capitalize
+    ago
+  %dt
+    Screen name
+  %dd
+    = @user.screen_name
+  %dt
+    Bio
+  %dd
+    = @user.description
+  - unless @user.location.blank?
     %dt
-      = key.titleize
+      Location
     %dd
-      - case key
-      - when 'image'
-        = image_tag value, alt: session['user_info']['name']
-      - when 'urls'
-        %ul
-          - value.each do |service, url|
-            %li
-              = link_to service, url
-      - else
-        = value
+      = @user.location
+  %dt
+    Profile image
+  %dd
+    = image_tag @user.profile_image_url
+  %dt
+    Tweets
+  %dd
+    = number_with_delimiter @user.statuses_count
+  %dt
+    Following
+  %dd
+    = number_with_delimiter @user.friends_count
+  %dt
+    Followers
+  %dd
+    = number_with_delimiter @user.followers_count
+  %dt
+    Favorites
+  %dd
+    = number_with_delimiter @user.favourites_count
+  %dt
+    Listed
+  %dd
+    = number_with_delimiter @user.listed_count
+  - unless @user.status.blank?
+    %dt
+      Status
+    %dd
+      = time_ago_in_words(@user.status.created_at).capitalize
+      ago, you said:
+      %q(cite = "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}")
+        = @user.status.text
+      via
+      = @user.status.source.html_safe
 = form_tag signout_path, method: 'delete' do
   = submit_tag 'Sign out'
