@@ -16,4 +16,9 @@ class SessionsController < ApplicationController
     flash[:error] = "Sign in with Twitter failed!"
     redirect_to root_path
   end
+
+  def destroy
+    reset_session
+    redirect_to root_path, notice: "Signed out!"
+  end
 end
