@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+require 'action_controller/railtie'
+require 'rails/test_unit/railtie'
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
@@ -37,7 +38,6 @@ module SignInWithTwitter
     # JavaScript files you want as :defaults (application.js is always included).
     # config.action_view.javascript_expansions[:defaults] = %w(prototype prototype_ujs)
 
-
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
@@ -45,7 +45,7 @@ module SignInWithTwitter
     config.filter_parameters += [:password]
 
     # Enable IdentityMap for Active Record, to disable set to false or remove the line below.
-    config.active_record.identity_map = true
+    # config.active_record.identity_map = true
 
     # Enable the asset pipeline
     config.assets.enabled = false
