@@ -5,4 +5,7 @@
       Sign in with Twitter
     = csrf_meta_tags
   %body
+    - if flash[:notice]
+      %p{id: "notice"}
+        = flash[:notice]
     = yield
