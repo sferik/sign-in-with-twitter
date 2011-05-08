@@ -18,6 +18,7 @@ end
 group :test do
   gem 'ZenTest'
   gem 'mocha'
+  gem 'simplecov'
   gem 'turn', :require => false
   gem 'webmock'
 end
