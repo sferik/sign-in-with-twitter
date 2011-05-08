@@ -30,8 +30,7 @@
     %dt
       URL
     %dd
-      %a(href = "#{@user.url}")
-        = @user.url
+      = link_to @user.url, @user.url
   %dt
     Profile image
   %dd
@@ -62,7 +61,7 @@
     %dd
       = time_ago_in_words(@user.status.created_at).capitalize
       ago, you said:
-      %q(cite = "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}")
+      %q{:cite => "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}"}
         = @user.status.text
       via
       = @user.status.source.html_safe
