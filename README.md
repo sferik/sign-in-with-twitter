@@ -36,7 +36,9 @@ key and secret into the command below.
 
 Contributing
 ------------
-In the spirit of [free software](http://www.fsf.org/licensing/essays/free-sw.html), **everyone** is encouraged to help improve this project.
+In the spirit of [free software][free-sw], **everyone** is encouraged to help improve this project.
+
+[free-sw]: http://www.fsf.org/licensing/essays/free-sw.html
 
 Here are some ways *you* can contribute:
 
@@ -47,5 +49,19 @@ Here are some ways *you* can contribute:
 * by writing specifications
 * by writing code (**no patch is too small**: fix typos, add comments, clean up inconsistent whitespace)
 * by refactoring code
-* by closing [issues](https://github.com/sferik/sign-in-with-twitter/issues)
+* by closing [issues][issues]
 * by reviewing patches
+
+[issues]: https://github.com/sferik/sign-in-with-twitter/issues
+
+Submitting an Issue
+-------------------
+We use the [GitHub issue tracker][issues] to track bugs and features. Before
+submitting a bug report or feature request, check to make sure it hasn't
+already been submitted. You can indicate support for an existing issuse by
+voting it up. When submitting a bug report, please include a [Gist][gist] that
+includes a stack trace and any details that may be necessary to reproduce the
+bug, including your gem version, Ruby version, and operating system. Ideally, a
+bug report should include a pull request with failing specs.
+
+[gist]: https://gist.github.com/
