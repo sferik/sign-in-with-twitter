@@ -59,7 +59,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     mocha (0.9.12)
-    multi_json (1.0.1)
+    multi_json (1.0.2)
     multi_xml (0.2.2)
     multipart-post (1.1.0)
     oa-core (0.2.5)
