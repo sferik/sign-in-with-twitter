@@ -6,13 +6,17 @@ gem 'oa-oauth'
 gem 'sass'
 gem 'twitter'
 
+platforms :ruby do
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+end
+
 platforms :jruby do
   gem 'jruby-openssl', '~> 0.7'
+  gem 'therubyrhino', '~> 1.72'
 end
 
 group :production do
   gem 'pg'
-  gem 'therubyracer-heroku', '0.8.1.pre3'
 end
 
 group :test do
