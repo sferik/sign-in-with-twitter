@@ -5,3 +5,4 @@ rvm:
   - jruby
   - rbx
   - ree
+env: "RAILS_ENV=test"
