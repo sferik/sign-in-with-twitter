@@ -128,8 +128,8 @@ GEM
       rash (~> 0.3.0)
       simple_oauth (~> 0.1.4)
     tzinfo (0.3.27)
-    webmock (1.6.2)
-      addressable (>= 2.2.2)
+    webmock (1.6.4)
+      addressable (> 2.2.5, ~> 2.2)
       crack (>= 0.1.7)
 
 PLATFORMS
