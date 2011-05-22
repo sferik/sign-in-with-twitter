@@ -8,6 +8,7 @@
 ._*
 .bundle
 .config
+.sass-cache/
 .yardoc
 Icon?
 InstalledFiles
