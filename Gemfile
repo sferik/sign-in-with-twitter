@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc2'
+gem 'rails', '3.1.0.rc3'
 gem 'haml'
 gem 'oa-oauth'
 gem 'twitter'
