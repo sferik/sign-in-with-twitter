@@ -47,7 +47,7 @@ GEM
       rack (>= 1.1.0, < 2)
     faraday_middleware (0.6.3)
       faraday (~> 0.6.0)
-    haml (3.1.1)
+    haml (3.1.2)
     hashie (1.0.0)
     hike (1.0.0)
     i18n (0.6.0)
