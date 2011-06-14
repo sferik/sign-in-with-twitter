@@ -16,7 +16,7 @@ group :test do
   gem 'ZenTest'
   gem 'mocha'
   gem 'simplecov'
-  gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer'
   gem 'therubyrhino', :platforms => :jruby
   gem 'turn', :require => false
   gem 'webmock'
