@@ -5,26 +5,19 @@ gem 'haml'
 gem 'oa-oauth'
 gem 'twitter'
 
-platforms :jruby do
-  gem 'jruby-openssl', '~> 0.7'
-end
+gem 'jruby-openssl', :platforms => :jruby
 
 group :production do
   gem 'pg'
-
-  platforms :ruby do
-    gem 'therubyracer-heroku', '0.8.1.pre3'
-  end
-
-  platforms :jruby do
-    gem 'therubyrhino', '~> 1.72'
-  end
+  gem 'therubyracer-heroku', '0.8.1.pre3', :platforms => :ruby
 end
 
 group :test do
   gem 'ZenTest'
   gem 'mocha'
   gem 'simplecov'
+  gem 'therubyracer', :platforms => :ruby
+  gem 'therubyrhino', :platforms => :jruby
   gem 'turn', :require => false
   gem 'webmock'
 end
