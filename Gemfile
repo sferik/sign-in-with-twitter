@@ -9,14 +9,14 @@ gem 'jruby-openssl', :platforms => :jruby
 
 group :production do
   gem 'pg'
-  gem 'therubyracer-heroku', '0.8.1.pre3', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 end
 
 group :test do
   gem 'ZenTest'
   gem 'mocha'
   gem 'simplecov'
-  gem 'therubyracer', '0.9.0', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
   gem 'therubyrhino', :platforms => :jruby
   gem 'turn', :require => false
   gem 'webmock'
