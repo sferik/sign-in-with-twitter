@@ -16,7 +16,7 @@ Continuous Integration
 Demo
 ----
 You can see a running version of the application at
-[http://sign-in-with-twitter.heroku.com/](http://sign-in-with-twitter.heroku.com/).
+[http://sign-in-with-twitter.herokuapp.com/](http://sign-in-with-twitter.herokuapp.com/).
 
 Installation
 ------------
