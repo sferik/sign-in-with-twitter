@@ -3,21 +3,22 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.0.rc4'
 gem 'haml'
 gem 'oa-oauth'
+gem 'therubyracer', '0.9.0', :platforms => :ruby
 gem 'twitter'
 
-gem 'jruby-openssl', :platforms => :jruby
+platforms :jruby do
+  gem 'jruby-openssl'
+  gem 'therubyrhino'
+end
 
 group :production do
   gem 'pg'
-  gem 'therubyracer', :platforms => :ruby
 end
 
 group :test do
   gem 'ZenTest'
   gem 'mocha'
   gem 'simplecov'
-  gem 'therubyracer', :platforms => :ruby
-  gem 'therubyrhino', :platforms => :jruby
   gem 'turn', :require => false
   gem 'webmock'
 end
