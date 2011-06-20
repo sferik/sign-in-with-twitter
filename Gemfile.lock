@@ -53,6 +53,7 @@ GEM
     i18n (0.6.0)
     jruby-openssl (0.7.4)
       bouncy-castle-java
+    kgio (2.4.2)
     libv8 (3.3.10.2)
     mail (2.3.0)
       i18n (>= 0.4.0)
@@ -131,8 +132,11 @@ GEM
       rash (~> 0.3.0)
       simple_oauth (~> 0.1.5)
     tzinfo (0.3.28)
+    unicorn (3.7.0)
+      kgio (~> 2.3)
+      rack
     webmock (1.6.4)
-      addressable (> 2.2.5, ~> 2.2)
+      addressable (~> 2.2, > 2.2.5)
       crack (>= 0.1.7)
 
 PLATFORMS
@@ -152,4 +156,5 @@ DEPENDENCIES
   therubyrhino
   turn
   twitter
+  unicorn
   webmock
