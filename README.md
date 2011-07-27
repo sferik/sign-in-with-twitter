@@ -11,7 +11,7 @@ to use the [Sign in with Twitter][siwt] workflow using version 1 of the
 
 Continuous Integration
 ----------------------
-[![Build Status](http://travis-ci.org/sferik/sign-in-with-twitter.png)](http://travis-ci.org/sferik/sign-in-with-twitter)
+[![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png)](http://travis-ci.org/sferik/sign-in-with-twitter)
 
 Demo
 ----
