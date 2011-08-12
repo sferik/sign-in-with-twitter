@@ -18,7 +18,6 @@ end
 group :test do
   gem 'ZenTest'
   gem 'mocha'
-  gem 'mustang', :platforms => :ruby
   gem 'simplecov'
   gem 'webmock'
 end
