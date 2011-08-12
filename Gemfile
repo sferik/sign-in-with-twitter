@@ -16,7 +16,6 @@ group :production do
 end
 
 group :test do
-  gem 'ZenTest'
   gem 'mocha'
   gem 'simplecov'
   gem 'webmock'

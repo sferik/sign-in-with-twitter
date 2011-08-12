@@ -1,7 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    ZenTest (4.6.0)
     actionmailer (3.1.0.rc5)
       actionpack (= 3.1.0.rc5)
       mail (~> 2.3.0)
@@ -134,7 +133,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ZenTest
   haml (~> 3.2.0.alpha)
   jruby-openssl
   mocha
