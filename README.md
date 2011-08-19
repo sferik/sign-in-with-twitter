@@ -1,5 +1,4 @@
-Sign in with Twitter
-====================
+# Sign in with Twitter
 Sign in with Twitter is a very basic Rails 3 application that demonstrates how
 to use the [Sign in with Twitter][siwt] workflow using version 1 of the
 [twitter gem][twitter] (which has removed built-in OAuth support) and the
@@ -9,23 +8,19 @@ to use the [Sign in with Twitter][siwt] workflow using version 1 of the
 [twitter]: https://github.com/jnunemaker/twitter
 [omniauth]: https://github.com/intridea/omniauth
 
-<a name="ci">Continuous Integration</a>
-----------------------
+## <a name="ci">Continuous Integration</a>
 [![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png)](http://travis-ci.org/sferik/sign-in-with-twitter)
 
-<a name="demo">Demo</a>
-----
+## <a name="demo">Demo</a>
 You can see a running version of the application at
 [http://sign-in-with-twitter.herokuapp.com/](http://sign-in-with-twitter.herokuapp.com/).
 
-<a name="installation">Installation</a>
-------------
+## <a name="installation">Installation</a>
     git clone git://github.com/sferik/sign-in-with-twitter.git
     cd sign-in-with-twitter
     bundle install
 
-<a name="usage">Usage</a>
------
+## <a name="usage">Usage</a>
 Sign in with Twitter requires you to [register an app with Twitter][apps] to
 obtain OAuth credentials. Once you obtain credentials, substitute your consumer
 key and secret into the command below.
@@ -34,8 +29,7 @@ key and secret into the command below.
 
     CONSUMER_KEY=abc CONSUMER_SECRET=123 rails server
 
-<a name="contributing">Contributing</a>
-------------
+## <a name="contributing">Contributing</a>
 In the spirit of [free software][free-sw], **everyone** is encouraged to help improve this project.
 
 [free-sw]: http://www.fsf.org/licensing/essays/free-sw.html
@@ -54,8 +48,7 @@ Here are some ways *you* can contribute:
 
 [issues]: https://github.com/sferik/sign-in-with-twitter/issues
 
-<a name="issues">Submitting an Issue</a>
--------------------
+## <a name="issues">Submitting an Issue</a>
 We use the [GitHub issue tracker][issues] to track bugs and features. Before
 submitting a bug report or feature request, check to make sure it hasn't
 already been submitted. You can indicate support for an existing issuse by
@@ -66,8 +59,7 @@ bug report should include a pull request with failing specs.
 
 [gist]: https://gist.github.com/
 
-<a name="pulls">Submitting a Pull Request</a>
--------------------------
+## <a name="pulls">Submitting a Pull Request</a>
 1. Fork the project.
 2. Create a topic branch.
 3. Implement your feature or bug fix.
@@ -76,8 +68,7 @@ bug report should include a pull request with failing specs.
 6. Commit and push your changes.
 7. Submit a pull request. Please do not include changes to the gemspec or version file. (If you want to create your own version for some reason, please do so in a separate commit.)
 
-<a name="rubies">Supported Rubies</a>
-----------------
+## <a name="rubies">Supported Rubies</a>
 This library aims to support and is [tested
 against](http://travis-ci.org/sferik/sign-in-with-twitter) the following Ruby
 implementations:
@@ -101,7 +92,6 @@ implementation, you will be personally responsible for providing patches in a
 timely fashion. If critical issues for a particular implementation exist at the
 time of a major release, support for that Ruby version may be dropped.
 
-<a name="copyright">Copyright</a>
----------
+## <a name="copyright">Copyright</a>
 Copyright (c) 2011 Erik Michaels-Ober.
 See [LICENSE](https://github.com/sferik/sign-in-with-twitter/blob/master/LICENSE.md) for details.
