@@ -14,6 +14,7 @@ end
 group :production do
   gem 'pg'
   gem 'therubyracer', :platforms => :ruby
+  gem 'thin'
 end
 
 group :test do
