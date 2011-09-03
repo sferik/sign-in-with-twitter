@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.1.0.rc6'
+gem 'rails', '~> 3.1.0'
 
 gem 'haml', '~> 3.2.0.alpha'
 gem 'oa-oauth'
@@ -8,7 +8,6 @@ gem 'twitter'
 
 platforms :jruby do
   gem 'jruby-openssl'
-  gem 'therubyrhino'
 end
 
 group :production do
