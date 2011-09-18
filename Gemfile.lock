@@ -34,7 +34,7 @@ GEM
     arel (2.2.1)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
-    crack (0.1.8)
+    crack (0.3.0)
     daemons (1.1.4)
     erubis (2.7.0)
     eventmachine (0.12.10)
