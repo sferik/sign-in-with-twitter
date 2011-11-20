@@ -120,7 +120,7 @@ GEM
     twitter-text (1.4.13)
       activesupport
     tzinfo (0.3.31)
-    webmock (1.7.7)
+    webmock (1.7.8)
       addressable (~> 2.2, > 2.2.5)
       crack (>= 0.1.7)
 
