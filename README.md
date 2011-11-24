@@ -9,11 +9,15 @@ to use the [Sign in with Twitter][siwt] workflow using version 1 of the
 [omniauth]: https://github.com/intridea/omniauth
 
 ## <a name="ci"></a>Continuous Integration
-[![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png)](http://travis-ci.org/sferik/sign-in-with-twitter)
+[![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png)][ci]
+
+[ci]: http://travis-ci.org/sferik/sign-in-with-twitter
 
 ## <a name="demo"></a>Demo
 You can see a running version of the application at
-[http://sign-in-with-twitter.herokuapp.com/](http://sign-in-with-twitter.herokuapp.com/).
+[http://sign-in-with-twitter.herokuapp.com/][demo].
+
+[demo]: http://sign-in-with-twitter.herokuapp.com/
 
 ## <a name="installation"></a>Installation
     git clone git://github.com/sferik/sign-in-with-twitter.git
@@ -30,7 +34,8 @@ key and secret into the command below.
     CONSUMER_KEY=abc CONSUMER_SECRET=123 rails server
 
 ## <a name="contributing"></a>Contributing
-In the spirit of [free software][free-sw], **everyone** is encouraged to help improve this project.
+In the spirit of [free software][free-sw], **everyone** is encouraged to help
+improve this project.
 
 [free-sw]: http://www.fsf.org/licensing/essays/free-sw.html
 
@@ -64,19 +69,24 @@ bug report should include a pull request with failing specs.
 2. Create a topic branch.
 3. Implement your feature or bug fix.
 4. Add tests for your feature or bug fix.
-5. Run <tt>bundle exec rake test</tt>. If your changes are not 100% covered, go back to step 4.
+5. Run `bundle exec rake test`. If your changes are not 100% covered, go back
+   to step 4.
 6. Commit and push your changes.
-7. Submit a pull request. Please do not include changes to the gemspec or version file. (If you want to create your own version for some reason, please do so in a separate commit.)
+7. Submit a pull request. Please do not include changes to the gemspec or
+   version file. (If you want to create your own version for some reason,
+   please do so in a separate commit.)
 
 ## <a name="versions"></a>Supported Ruby Versions
-This library aims to support and is [tested
-against](http://travis-ci.org/sferik/sign-in-with-twitter) the following Ruby
+This library aims to support and is [tested against][ci] the following Ruby
 implementations:
 
 * Ruby 1.8.7
 * Ruby 1.9.2
-* [Rubinius](http://rubini.us)
-* [Ruby Enterprise Edition](http://www.rubyenterpriseedition.com/)
+* [Rubinius][]
+* [Ruby Enterprise Edition][ree]
+
+[rubinius]: http://rubini.us/
+[ree]: http://www.rubyenterpriseedition.com/
 
 If something doesn't work on one of these interpreters, it should be considered
 a bug.
@@ -93,5 +103,6 @@ timely fashion. If critical issues for a particular implementation exist at the
 time of a major release, support for that Ruby version may be dropped.
 
 ## <a name="copyright"></a>Copyright
-Copyright (c) 2011 Erik Michaels-Ober.
-See [LICENSE](https://github.com/sferik/sign-in-with-twitter/blob/master/LICENSE.md) for details.
+Copyright (c) 2011 Erik Michaels-Ober. See [LICENSE][] for details.
+
+[license]: https://github.com/sferik/sign-in-with-twitter/blob/master/LICENSE.md
