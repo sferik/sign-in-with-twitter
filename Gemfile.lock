@@ -62,7 +62,7 @@ GEM
     omniauth-oauth (1.0.0)
       oauth
       omniauth (~> 1.0)
-    omniauth-twitter (0.0.6)
+    omniauth-twitter (0.0.7)
       omniauth-oauth (~> 1.0)
     pg (0.11.0)
     polyglot (0.3.3)
