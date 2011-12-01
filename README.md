@@ -87,6 +87,7 @@ implementations:
 
 * Ruby 1.8.7
 * Ruby 1.9.2
+* Ruby 1.9.3
 * [Rubinius][]
 * [Ruby Enterprise Edition][ree]
 
