@@ -13,6 +13,11 @@ to use the [Sign in with Twitter][siwt] workflow using version 1 of the
 
 [ci]: http://travis-ci.org/sferik/sign-in-with-twitter
 
+## <a name="dependencies"></a>Dependency Status
+[![Dependency Status](https://gemnasium.com/sferik/sign-in-with-twitter.png)][gemnasium]
+
+[gemnasium]: https://gemnasium.com/sferik/sign-in-with-twitter
+
 ## <a name="demo"></a>Demo
 You can see a running version of the application at
 [http://sign-in-with-twitter.herokuapp.com/][demo].
