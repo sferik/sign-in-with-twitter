@@ -8,10 +8,10 @@ to use the [Sign in with Twitter][siwt] workflow using version 1 of the
 [twitter]: https://github.com/jnunemaker/twitter
 [omniauth]: https://github.com/intridea/omniauth
 
-## <a name="ci"></a>Continuous Integration
-[![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png)][ci]
+## <a name="build"></a>Build Status
+[![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png?branch=master)][travis]
 
-[ci]: http://travis-ci.org/sferik/sign-in-with-twitter
+[travis]: http://travis-ci.org/sferik/sign-in-with-twitter
 
 ## <a name="dependencies"></a>Dependency Status
 [![Dependency Status](https://gemnasium.com/sferik/sign-in-with-twitter.png?travis)][gemnasium]
@@ -82,7 +82,7 @@ bug report should include a pull request with failing specs.
    please do so in a separate commit.)
 
 ## <a name="versions"></a>Supported Ruby Versions
-This library aims to support and is [tested against][ci] the following Ruby
+This library aims to support and is [tested against][travis] the following Ruby
 implementations:
 
 * Ruby 1.8.7
