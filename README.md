@@ -1,22 +1,14 @@
-# Sign in with Twitter
+# Sign in with Twitter [![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png?branch=master)][travis] [![Dependency Status](https://gemnasium.com/sferik/sign-in-with-twitter.png?travis)][gemnasium]
 Sign in with Twitter is a very basic Rails 3 application that demonstrates how
 to use the [Sign in with Twitter][siwt] workflow using version 1 of the
 [twitter gem][twitter] (which has removed built-in OAuth support) and the
 [omniauth gem][omniauth].
 
+[travis]: http://travis-ci.org/sferik/sign-in-with-twitter
+[gemnasium]: https://gemnasium.com/sferik/sign-in-with-twitter
 [siwt]: http://dev.twitter.com/pages/sign_in_with_twitter
 [twitter]: https://github.com/jnunemaker/twitter
 [omniauth]: https://github.com/intridea/omniauth
-
-## <a name="build"></a>Build Status
-[![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png?branch=master)][travis]
-
-[travis]: http://travis-ci.org/sferik/sign-in-with-twitter
-
-## <a name="dependencies"></a>Dependency Status
-[![Dependency Status](https://gemnasium.com/sferik/sign-in-with-twitter.png?travis)][gemnasium]
-
-[gemnasium]: https://gemnasium.com/sferik/sign-in-with-twitter
 
 ## <a name="demo"></a>Demo
 You can see a running version of the application at
