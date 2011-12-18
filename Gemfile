@@ -11,6 +11,7 @@ platforms :jruby do
 end
 
 group :assets do
+  gem 'sass-rails'
   gem 'uglifier'
 end
 
