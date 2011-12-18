@@ -1,69 +1,60 @@
-%h1
-  = "Hello #{@user.name}"
-%h2
-  Profile
-%dl
-  %dt
-    ID
-  %dd
-    = number_with_delimiter @user.id
-  %dt
-    Created
-  %dd
-    = time_ago_in_words(@user.created_at).capitalize
-    ago
-  %dt
-    Screen name
-  %dd
-    = @user.screen_name
+%div{:class => "page-header"}
+  %h1
+    = @user.name
+    %small
+      = "@#{@user.screen_name}"
   - unless @user.description.blank?
-    %dt
-      Bio
-    %dd
+    %h6
       = @user.description
-  - unless @user.location.blank?
-    %dt
-      Location
-    %dd
-      = @user.location
-  - unless @user.url.blank?
-    %dt
-      URL
-    %dd
-      = link_to @user.url, @user.url
-  %dt
-    Profile image
-  %dd
-    = image_tag @user.profile_image_url
-  %dt
-    Tweets
-  %dd
-    = number_with_delimiter @user.statuses_count
-  %dt
-    Following
-  %dd
-    = number_with_delimiter @user.friends_count
-  %dt
-    Followers
-  %dd
-    = number_with_delimiter @user.followers_count
-  %dt
-    Favorites
-  %dd
-    = number_with_delimiter @user.favourites_count
-  %dt
-    Listed
-  %dd
-    = number_with_delimiter @user.listed_count
-  - unless @user.status.blank?
-    %dt
-      Status
-    %dd
-      = time_ago_in_words(@user.status.created_at).capitalize
-      ago, you said:
-      %q{:cite => "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}"}
-        = @user.status.text
-      via
-      = @user.status.source.html_safe
-= form_tag signout_path, :method => 'delete' do
-  = submit_tag 'Sign out'
+%div{:class => "row"}
+  %div{:class => "span2"}
+    %ul{:class => "media-grid"}
+      %li
+        %a{:href => @user.url}
+          %img{:src => "https://api.twitter.com/1/users/profile_image?screen_name=#{@user.screen_name}&size=original", :alt => @user.name}
+  %div{:class => "span12"}
+    %table
+      %thead
+        %tr
+          %th
+            Location
+          %th
+            Tweets
+          %th
+            Following
+          %th
+            Followers
+          %th
+            Favorites
+          %th
+            Listed
+      %tbody
+        %tr
+          %td
+            %address
+              = @user.location
+          %td
+            = number_with_delimiter @user.statuses_count
+          %td
+            = number_with_delimiter @user.friends_count
+          %td
+            = number_with_delimiter @user.followers_count
+          %td
+            = number_with_delimiter @user.favourites_count
+          %td
+            = number_with_delimiter @user.listed_count
+- unless @user.status.blank?
+  %div{:class => "row"}
+    %div{:class => "span2"}
+      = form_tag signout_path, :method => 'delete' do
+        %button{:class => "btn"}
+          Sign out
+    %div{:class => "span12"}
+      %blockquote
+        %q{:cite => "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}"}
+          %p
+            = @user.status.text
+        %small
+          = time_ago_in_words(@user.status.created_at).capitalize
+          ago via
+          = @user.status.source.html_safe

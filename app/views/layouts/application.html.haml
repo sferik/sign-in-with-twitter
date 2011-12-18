@@ -1,14 +1,48 @@
 !!! 5
 %html
   %head
+    %meta{:charset => "utf-8"}
+    %link{:rel => "stylesheet", :href => "http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css"}
+    = stylesheet_link_tag "application"
     %title
       Sign in with Twitter
     = csrf_meta_tags
   %body
-    - if flash[:notice]
-      %p{:id => "notice"}
-        = flash[:notice]
-    - if flash[:error]
-      %p{:id => "error"}
-        = flash[:error]
-    = yield
+    %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
+      = image_tag("fork-me-on-github.png", :alt => "Fork me on GitHub", :style => "position: absolute; top: 0; right: 0; border: 0; z-index: 10001;")
+    %div{:class => "topbar"}
+      %div{:class => "fill"}
+        %div{:class => "container"}
+          = link_to "Sign in with Twitter", root_path, :class => "brand"
+          %ul{:class => "nav"}
+            %li
+              %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
+                Source Code
+            %li
+              %a{:href => "https://dev.twitter.com/docs/auth/implementing-sign-twitter"}
+                Documentation
+            %li
+              %a{:href => "http://travis-ci.org/sferik/sign-in-with-twitter"}
+                Build Status
+            %li
+              %a{:href => "https://gemnasium.com/sferik/sign-in-with-twitter"}
+                Dependency Status
+            %li
+              %a{:href => "https://dev.twitter.com/docs/sign-twitter-resources"}
+                Resources
+    %div{:class => "container"}
+      - if flash[:notice]
+        %div{:class => "alert-message warning"}
+          %p
+            = flash[:notice]
+      - if flash[:error]
+        %div{:class => "alert-message error"}
+          %p
+            = flash[:error]
+      %div{:class => "content"}
+        = yield
+      %footer
+        %p
+          &copy;
+          = Date.today.year
+          Erik Michaels-Ober.

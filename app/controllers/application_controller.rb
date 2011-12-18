@@ -12,4 +12,5 @@ class ApplicationController < ActionController::Base
     end
     @client ||= Twitter::Client.new
   end
+
 end

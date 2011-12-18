@@ -1,2 +1,19 @@
-= form_tag "/auth/twitter", :method => 'get' do
-  = image_submit_tag "sign-in-with-twitter.png", :name => "commit", :value => "Sign in"
+%div{:class => "page-header"}
+  %h6
+    A
+    %a{:href => "http://rubyonrails.org/"}
+      Ruby on Rails
+    app that demonstrates how to use
+    %a{:href => "https://dev.twitter.com/docs/auth/sign-twitter"}
+      Sign in with Twitter
+    using the
+    %a{:href => "https://rubygems.org/gems/twitter"}
+      twitter gem
+    and
+    %a{:href => "https://rubygems.org/gems/omniauth"}
+      OmniAuth
+%div{:class => "row"}
+  %div{:class => "span14"}
+    = form_tag "/auth/twitter", :method => 'get' do
+      %button{:class => "btn large primary"}
+        Sign in with Twitter
