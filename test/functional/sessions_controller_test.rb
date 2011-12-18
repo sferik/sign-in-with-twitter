@@ -11,7 +11,7 @@ class SessionsControllerTest < ActionController::TestCase
     get :create
     assert_equal 'abc', session[:access_token]
     assert_equal '123', session[:access_secret]
-    assert_equal 'Signed in with Twitter!', flash[:notice]
+    assert_equal 'Signed in', flash[:notice]
     assert_redirected_to show_path
   end
 
@@ -26,10 +26,6 @@ class SessionsControllerTest < ActionController::TestCase
     assert_not_nil assigns :user
     assert_response :success
     assert_select 'title', 'Sign in with Twitter'
-    assert_select 'h1', 'Hello Erik Michaels-Ober'
-    assert_select 'h2', 'Profile'
-    assert_select 'dt', :count => 13
-    assert_select 'dd', :count => 13
     assert_select 'form' do
       assert_select '[action=?]', '/signout'
       assert_select '[method=?]', 'post'
@@ -38,10 +34,7 @@ class SessionsControllerTest < ActionController::TestCase
       assert_select '[type=?]', 'hidden'
       assert_select '[value=?]', 'delete'
     end
-    assert_select 'input[name="commit"]' do
-      assert_select '[type=?]', 'submit'
-      assert_select '[value=?]', 'Sign out'
-    end
+    assert_select 'button', 'Sign out'
   end
 
   test 'should redirect to failure path when unauthenticated' do
@@ -51,14 +44,14 @@ class SessionsControllerTest < ActionController::TestCase
 
   test 'should display error on failure' do
     get :error
-    assert_equal 'Sign in with Twitter failed!', flash[:error]
+    assert_equal 'Sign in with Twitter failed', flash[:error]
     assert_redirected_to root_path
   end
 
   test 'should empty session on sign out' do
     get :destroy
     assert_equal Hash.new, session
-    assert_equal 'Signed out!', flash[:notice]
+    assert_equal 'Signed out', flash[:notice]
     assert_redirected_to root_path
   end
 end
