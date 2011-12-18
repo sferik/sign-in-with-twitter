@@ -2,6 +2,8 @@
 A Ruby on Rails app that demonstrates how to use the [Sign in with
 Twitter][siwt] workflow using the [twitter gem][twitter] and [OmniAuth][].
 
+![Sign in with Twitter](https://github.com/sferik/sign-in-with-twitter/raw/master/screenshot.png "Sign in with Twitter")
+
 [travis]: http://travis-ci.org/sferik/sign-in-with-twitter
 [gemnasium]: https://gemnasium.com/sferik/sign-in-with-twitter
 [siwt]: http://dev.twitter.com/pages/sign_in_with_twitter
@@ -27,9 +29,6 @@ key and secret into the command below.
 [apps]: http://dev.twitter.com/apps
 
     CONSUMER_KEY=abc CONSUMER_SECRET=123 rails server
-
-## <a name="screenshot"></a>Screenshot
-![Sign in with Twitter](https://github.com/sferik/sign-in-with-twitter/raw/master/screenshot.png "Sign in with Twitter")
 
 ## <a name="contributing"></a>Contributing
 In the spirit of [free software][free-sw], **everyone** is encouraged to help
