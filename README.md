@@ -6,9 +6,9 @@ Twitter][siwt] workflow using the [twitter gem][twitter] and [OmniAuth][].
 
 [travis]: http://travis-ci.org/sferik/sign-in-with-twitter
 [gemnasium]: https://gemnasium.com/sferik/sign-in-with-twitter
-[siwt]: http://dev.twitter.com/pages/sign_in_with_twitter
-[twitter]: https://github.com/jnunemaker/twitter
-[omniauth]: https://github.com/intridea/omniauth
+[siwt]: https://dev.twitter.com/docs/auth/sign-twitter
+[twitter]: https://rubygems.org/gems/twitter
+[omniauth]: https://rubygems.org/gems/omniauth
 
 ## <a name="demo"></a>Demo
 You can see a running version of the application at
