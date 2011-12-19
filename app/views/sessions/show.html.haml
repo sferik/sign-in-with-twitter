@@ -11,7 +11,7 @@
     %ul.media-grid
       %li
         %a{:href => @user.url}
-          %img{:src => "https://api.twitter.com/1/users/profile_image?screen_name=#{@user.screen_name}&size=original", :alt => @user.name}
+          %img.thumbnail{:src => "https://api.twitter.com/1/users/profile_image?screen_name=#{@user.screen_name}&size=bigger", :alt => @user.name}
   .span12
     %table
       %thead
@@ -43,13 +43,13 @@
             = number_with_delimiter @user.favourites_count
           %td
             = number_with_delimiter @user.listed_count
-- unless @user.status.blank?
-  .row
-    .span2
-      = form_tag signout_path, :method => 'delete' do
-        %button.btn
-          Sign out
-    .span12
+.row
+  .span2
+    = form_tag(signout_path, :method => 'delete') do
+      %button.btn
+        Sign out
+  .span12
+    - unless @user.status.blank?
       %blockquote
         %q{:cite => "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}"}
           %p

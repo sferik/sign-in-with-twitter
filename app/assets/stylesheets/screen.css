@@ -11,9 +11,6 @@ table, form {
 h6 {
   font-weight: normal;
 }
-button {
-  width: 100%;
-}
 .container > footer p {
   text-align: center; /* center align it with the container */
 }
