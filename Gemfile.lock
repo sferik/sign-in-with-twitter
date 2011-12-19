@@ -36,7 +36,7 @@ GEM
     daemons (1.1.5)
     erubis (2.7.0)
     eventmachine (0.12.10)
-    execjs (1.2.12)
+    execjs (1.2.13)
       multi_json (~> 1.0)
     faraday (0.7.5)
       addressable (~> 2.2.6)
