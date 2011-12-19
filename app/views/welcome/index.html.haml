@@ -1,4 +1,4 @@
-%div{:class => "page-header"}
+.page-header
   %h6
     A
     %a{:href => "http://rubyonrails.org/"}
@@ -12,8 +12,8 @@
     and
     %a{:href => "https://rubygems.org/gems/omniauth"}
       OmniAuth
-%div{:class => "row"}
-  %div{:class => "span14"}
+.row
+  .span14
     = form_tag "/auth/twitter", :method => 'get' do
       %button{:class => "btn large primary"}
         Sign in with Twitter

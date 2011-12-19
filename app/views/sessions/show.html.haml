@@ -1,4 +1,4 @@
-%div{:class => "page-header"}
+.page-header
   %h1
     = @user.name
     %small
@@ -6,13 +6,13 @@
   - unless @user.description.blank?
     %h6
       = @user.description
-%div{:class => "row"}
-  %div{:class => "span2"}
-    %ul{:class => "media-grid"}
+.row
+  .span2
+    .media-grid
       %li
         %a{:href => @user.url}
           %img{:src => "https://api.twitter.com/1/users/profile_image?screen_name=#{@user.screen_name}&size=original", :alt => @user.name}
-  %div{:class => "span12"}
+  .span12
     %table
       %thead
         %tr
@@ -44,12 +44,12 @@
           %td
             = number_with_delimiter @user.listed_count
 - unless @user.status.blank?
-  %div{:class => "row"}
-    %div{:class => "span2"}
+  .row
+    .span2
       = form_tag signout_path, :method => 'delete' do
         %button{:class => "btn"}
           Sign out
-    %div{:class => "span12"}
+    .span12
       %blockquote
         %q{:cite => "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}"}
           %p

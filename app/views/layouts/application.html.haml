@@ -10,9 +10,9 @@
   %body
     %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
       = image_tag("fork-me-on-github.png", :alt => "Fork me on GitHub", :style => "position: absolute; top: 0; right: 0; border: 0; z-index: 10001;")
-    %div{:class => "topbar"}
-      %div{:class => "fill"}
-        %div{:class => "container"}
+    .topbar
+      .fill
+        .container
           = link_to "Sign in with Twitter", root_path, :class => "brand"
           %ul{:class => "nav"}
             %li
@@ -30,7 +30,7 @@
             %li
               %a{:href => "https://dev.twitter.com/docs/sign-twitter-resources"}
                 Resources
-    %div{:class => "container"}
+    .container
       - if flash[:notice]
         %div{:class => "alert-message warning"}
           %p
@@ -39,7 +39,7 @@
         %div{:class => "alert-message error"}
           %p
             = flash[:error]
-      %div{:class => "content"}
+      .content
         = yield
       %footer
         %p
