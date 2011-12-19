@@ -8,7 +8,7 @@
       = @user.description
 .row
   .span2
-    .media-grid
+    %ul.media-grid
       %li
         %a{:href => @user.url}
           %img{:src => "https://api.twitter.com/1/users/profile_image?screen_name=#{@user.screen_name}&size=original", :alt => @user.name}
@@ -47,7 +47,7 @@
   .row
     .span2
       = form_tag signout_path, :method => 'delete' do
-        %button{:class => "btn"}
+        %button.btn
           Sign out
     .span12
       %blockquote
