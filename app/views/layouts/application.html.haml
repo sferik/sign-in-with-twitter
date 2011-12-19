@@ -3,9 +3,9 @@
   %head
     %meta{:charset => "utf-8"}
     %link{:rel => "shortcut icon", :href => "/favicon.ico"}
-    = stylesheet_link_tag "application"
     %title
       Sign in with Twitter
+    = stylesheet_link_tag "application"
     = csrf_meta_tags
   %body
     %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
@@ -16,8 +16,8 @@
           = link_to "Sign in with Twitter", root_path, :class => "brand"
           %ul{:class => "nav"}
             %li
-              %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
-                Source Code
+              %a{:href => "https://dev.twitter.com/docs/sign-twitter-resources"}
+                Resources
             %li
               %a{:href => "https://dev.twitter.com/docs/auth/implementing-sign-twitter"}
                 Documentation
@@ -28,8 +28,8 @@
               %a{:href => "https://gemnasium.com/sferik/sign-in-with-twitter"}
                 Dependency Status
             %li
-              %a{:href => "https://dev.twitter.com/docs/sign-twitter-resources"}
-                Resources
+              %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
+                Source Code
     .container
       - if flash[:notice]
         %div{:class => "alert-message warning"}
