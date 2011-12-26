@@ -128,7 +128,7 @@ GEM
       multi_json (~> 1.0)
       simple_oauth (~> 0.1)
     tzinfo (0.3.31)
-    uglifier (1.2.0)
+    uglifier (1.2.1)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
     webmock (1.7.8)
