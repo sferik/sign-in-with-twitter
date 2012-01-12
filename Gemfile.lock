@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/intridea/omniauth.git
+  revision: 966a4653a5fdb53b836b34aa16163c64c3c02cb4
+  specs:
+    omniauth (1.0.1)
+      hashie (~> 1.2)
+      rack (~> 1.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,9 +66,6 @@ GEM
     multi_json (1.0.4)
     multipart-post (1.1.4)
     oauth (0.4.5)
-    omniauth (1.0.1)
-      hashie (~> 1.2)
-      rack
     omniauth-oauth (1.0.0)
       oauth
       omniauth (~> 1.0)
@@ -135,6 +140,7 @@ DEPENDENCIES
   haml (~> 3.2.0.alpha)
   jruby-openssl
   mocha
+  omniauth!
   omniauth-twitter
   rails (~> 3.2.0.rc2)
   sass-rails
