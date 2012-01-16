@@ -2,9 +2,10 @@
 %html
   %head
     %title
-      Sign in with Twitter
+      = t("app.name")
     %meta{:charset => "utf-8"}
-    %meta{:name => "Description", :content => "A Ruby on Rails app that demonstrates how to use the Sign in with Twitter workflow using the twitter gem and OmniAuth."}
+    %meta{:name => "Author", :content => t("app.author")}
+    %meta{:name => "Description", :content => t("app.description")}
     %link{:rel => "shortcut icon", :href => "/favicon.ico"}
     / HTML5 shim, for IE6-8 support of HTML5 elements
     /[if lt IE 9]
@@ -16,7 +17,7 @@
     = csrf_meta_tags
   %body
     %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
-      = image_tag("fork-me-on-github.png", :alt => "Fork me on GitHub", :id => "sash")
+      = image_tag("fork-me-on-github.png", :alt => t("nav.sash"), :id => "sash")
     .navbar.navbar-static
       .navbar-inner
         .container
@@ -24,19 +25,19 @@
           %ul.nav
             %li
               %a{:href => "https://dev.twitter.com/docs/auth/implementing-sign-twitter"}
-                Documentation
+                = t("nav.documentation")
             %li
               %a{:href => "https://dev.twitter.com/docs/sign-twitter-resources"}
-                Resources
+                = t("nav.resources")
             %li
               %a{:href => "http://travis-ci.org/sferik/sign-in-with-twitter"}
-                Build Status
+                = t("nav.build_status")
             %li
               %a{:href => "https://gemnasium.com/sferik/sign-in-with-twitter"}
-                Dependency Status
+                = t("nav.dependency_status")
             %li
               %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
-                Source Code
+                = t("nav.source_code")
     .container
       - if flash[:notice]
         .alert-message.warning
@@ -58,4 +59,4 @@
         = yield
       %footer
         %p
-          = "&copy; #{Date.today.year} Erik Michaels-Ober.".html_safe
+          = "&copy; #{Date.today.year} #{t("app.author")}.".html_safe

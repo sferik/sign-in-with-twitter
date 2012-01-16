@@ -1,11 +1,12 @@
 # Sign in with Twitter [![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png?branch=master)][travis] [![Dependency Status](https://gemnasium.com/sferik/sign-in-with-twitter.png?travis)][gemnasium]
-A Ruby on Rails app that demonstrates how to use the [Sign in with
-Twitter][siwt] workflow using the [twitter gem][twitter] and [OmniAuth][].
+A [Ruby on Rails][ror] application that demonstrates how to use the [Sign in
+with Twitter][siwt] workflow using the [twitter gem][twitter] and [OmniAuth][].
 
 ![Sign in with Twitter](https://github.com/sferik/sign-in-with-twitter/raw/master/screenshot.png "Sign in with Twitter")
 
 [travis]: http://travis-ci.org/sferik/sign-in-with-twitter
 [gemnasium]: https://gemnasium.com/sferik/sign-in-with-twitter
+[ror]: http://rubyonrails.org/
 [siwt]: https://dev.twitter.com/docs/auth/sign-twitter
 [twitter]: https://rubygems.org/gems/twitter
 [omniauth]: https://rubygems.org/gems/omniauth

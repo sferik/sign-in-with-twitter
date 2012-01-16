@@ -19,8 +19,10 @@ class SessionsControllerTest < ActionController::TestCase
     session[:access_token] = 'abc'
     session[:access_secret] = '123'
     stub_request(:get, 'https://api.twitter.com/1/account/verify_credentials.json').
+      with(:query => {"include_entities" => "true"}).
       to_return(:body => File.read(File.expand_path('../../fixtures/user.json', __FILE__)), :status => 200)
-    stub_request(:get, "https://api.twitter.com/1/users/show.json?screen_name=sferik").
+    stub_request(:get, "https://api.twitter.com/1/users/show.json").
+      with(:query => {"screen_name" => "sferik"}).
       to_return(:body => File.read(File.expand_path('../../fixtures/user.json', __FILE__)), :status => 200)
     get :show
     assert_not_nil assigns :user

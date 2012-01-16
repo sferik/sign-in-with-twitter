@@ -1,21 +1,10 @@
 .page-header
   %h6
-    A
-    %a{:href => "http://rubyonrails.org/"}
-      Ruby on Rails
-    app that demonstrates how to use the
-    %a{:href => "https://dev.twitter.com/docs/auth/sign-twitter"}
-      Sign in with Twitter
-    workflow using the
-    %a{:href => "https://rubygems.org/gems/twitter"}
-      twitter gem
-    and
-    %a{:href => "https://rubygems.org/gems/omniauth"}
-      OmniAuth
+    = t("app.description_html", :omniauth => t("link.omniauth_html"), :ruby_on_rails => t("link.ruby_on_rails_html"), :sign_in_with_twitter => t("link.sign_in_with_twitter_html"), :twitter_gem => t("link.twitter_gem_html"))
 .row
   .span14
     = form_tag "/auth/twitter", :method => 'get' do
       %button.btn.large.primary
-        Sign in with Twitter
+        = t("button.sign_in")
       %p.help-block
-        Start by pressing this button to authenticate with Twitter.
+        = t("help.sign_in")

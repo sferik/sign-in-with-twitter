@@ -17,17 +17,17 @@
       %thead
         %tr
           %th
-            Location
+            = t("th.location")
           %th
-            Tweets
+            = t("th.tweets")
           %th
-            Following
+            = t("th.following")
           %th
-            Followers
+            = t("th.followers")
           %th
-            Favorites
+            = t("th.favorites")
           %th
-            Listed
+            = t("th.listed")
       %tbody
         %tr
           %td
@@ -47,7 +47,7 @@
   .span2
     = form_tag(signout_path, :method => 'delete') do
       %button.btn.danger#sign_out
-        Sign out
+        = t("button.sign_out")
   .span9
     - unless @user.status.blank?
       %blockquote
@@ -55,6 +55,5 @@
           %p
             = auto_link(@user.status.text).html_safe
         %small
-          = time_ago_in_words(@user.status.created_at).capitalize
-          ago via
-          = @user.status.source.html_safe
+          = t("time.ago", :time => time_ago_in_words(@user.status.created_at).capitalize)
+          = t("via.source", :source => @user.status.source).html_safe
