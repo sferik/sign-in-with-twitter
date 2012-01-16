@@ -3,10 +3,10 @@
     A
     %a{:href => "http://rubyonrails.org/"}
       Ruby on Rails
-    app that demonstrates how to use
+    app that demonstrates how to use the
     %a{:href => "https://dev.twitter.com/docs/auth/sign-twitter"}
       Sign in with Twitter
-    using the
+    workflow using the
     %a{:href => "https://rubygems.org/gems/twitter"}
       twitter gem
     and
@@ -17,5 +17,5 @@
     = form_tag "/auth/twitter", :method => 'get' do
       %button.btn.large.primary
         Sign in with Twitter
-      %small
+      %p.help-block
         Start by pressing this button to authenticate with Twitter.

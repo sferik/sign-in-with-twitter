@@ -125,6 +125,8 @@ GEM
       faraday (~> 0.7)
       multi_json (~> 1.0)
       simple_oauth (~> 0.1)
+    twitter-text (1.4.15)
+      activesupport
     tzinfo (0.3.31)
     uglifier (1.2.2)
       execjs (>= 0.3.0)
@@ -147,5 +149,6 @@ DEPENDENCIES
   simplecov
   thin
   twitter
+  twitter-text
   uglifier
   webmock

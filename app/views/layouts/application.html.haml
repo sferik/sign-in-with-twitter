@@ -1,18 +1,24 @@
 !!! 5
 %html
   %head
-    %meta{:charset => "utf-8"}
-    %link{:rel => "shortcut icon", :href => "/favicon.ico"}
     %title
       Sign in with Twitter
-    = stylesheet_link_tag "http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css"
+    %meta{:charset => "utf-8"}
+    %meta{:name => "Description", :content => "A Ruby on Rails app that demonstrates how to use the Sign in with Twitter workflow using the twitter gem and OmniAuth."}
+    %link{:rel => "shortcut icon", :href => "/favicon.ico"}
+    / HTML5 shim, for IE6-8 support of HTML5 elements
+    /[if lt IE 9]
+      = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
+    = stylesheet_link_tag "http://bootstrap.io/Content/css/bootstrap.css"
     = stylesheet_link_tag "application"
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+    = javascript_include_tag "http://bootstrap.io/Scripts/bootstrap/bootstrap-alert.js"
     = csrf_meta_tags
   %body
     %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
-      = image_tag("fork-me-on-github.png", :alt => "Fork me on GitHub", :style => "position: absolute; top: 0; right: 0; border: 0; z-index: 10001;")
-    .topbar
-      .fill
+      = image_tag("fork-me-on-github.png", :alt => "Fork me on GitHub", :id => "sash")
+    .navbar.navbar-static
+      .navbar-inner
         .container
           = link_to("Sign in with Twitter", root_path, :class => "brand")
           %ul.nav
@@ -34,16 +40,22 @@
     .container
       - if flash[:notice]
         .alert-message.warning
+          %a{:class => "close", :"data-dismiss" => "alert", :href => "#"}
+            &times;
           %p
             = flash[:notice]
+        :javascript
+          $(".alert-message").alert();
       - if flash[:error]
         .alert-message.error
+          %a{:class => "close", :"data-dismiss" => "alert", :href => "#"}
+            &times;
           %p
             = flash[:error]
+        :javascript
+          $(".alert-message").alert();
       .content
         = yield
       %footer
         %p
-          &copy;
-          = Date.today.year
-          Erik Michaels-Ober.
+          = "&copy; #{Date.today.year} Erik Michaels-Ober.".html_safe

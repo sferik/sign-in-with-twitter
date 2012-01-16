@@ -6,6 +6,7 @@ gem 'haml', '~> 3.2.0.alpha'
 gem 'omniauth', :git => 'git://github.com/intridea/omniauth.git'
 gem 'omniauth-twitter'
 gem 'twitter'
+gem 'twitter-text'
 
 platforms :jruby do
   gem 'jruby-openssl'

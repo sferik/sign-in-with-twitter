@@ -8,11 +8,11 @@
       = @user.description
 .row
   .span2
-    %ul.media-grid
+    %ul.thumbnails
       %li
-        %a{:href => @user.url}
-          %img.thumbnail{:src => "https://api.twitter.com/1/users/profile_image?screen_name=#{@user.screen_name}&size=bigger", :alt => @user.name}
-  .span12
+        %a.thumbnail{:href => @user.url}
+          %img{:src => "https://api.twitter.com/1/users/profile_image?screen_name=#{@user.screen_name}&size=bigger", :alt => @user.name}
+  .span9
     %table
       %thead
         %tr
@@ -46,14 +46,14 @@
 .row
   .span2
     = form_tag(signout_path, :method => 'delete') do
-      %button.btn
+      %button.btn.danger#sign_out
         Sign out
-  .span12
+  .span9
     - unless @user.status.blank?
       %blockquote
         %q{:cite => "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}"}
           %p
-            = @user.status.text
+            = auto_link(@user.status.text).html_safe
         %small
           = time_ago_in_words(@user.status.created_at).capitalize
           ago via
