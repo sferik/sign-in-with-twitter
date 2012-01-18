@@ -40,7 +40,7 @@ GEM
     arel (3.0.0)
     builder (3.0.0)
     crack (0.3.1)
-    daemons (1.1.5)
+    daemons (1.1.6)
     erubis (2.7.0)
     eventmachine (0.12.10)
     execjs (1.2.13)
