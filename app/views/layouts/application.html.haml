@@ -40,21 +40,19 @@
                 = t("nav.source_code")
     .container
       - if flash[:notice]
-        .alert-message.warning
+        .alert
           %a{:class => "close", :"data-dismiss" => "alert", :href => "#"}
             &times;
-          %p
-            = flash[:notice]
+          = flash[:notice]
         :javascript
-          $(".alert-message").alert();
+          $(".alert").alert();
       - if flash[:error]
-        .alert-message.error
+        .alert.alert-error
           %a{:class => "close", :"data-dismiss" => "alert", :href => "#"}
             &times;
-          %p
-            = flash[:error]
+          = flash[:error]
         :javascript
-          $(".alert-message").alert();
+          $(".alert").alert();
       .content
         = yield
       %footer
