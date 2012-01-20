@@ -1,10 +1,11 @@
 GIT
   remote: git://github.com/intridea/omniauth.git
-  revision: 7840608a02a91342da7c286643bb0d35c884668d
+  revision: 50c354b813b0e37fac4c95f67c8c0c34a58bb924
+  ref: 50c354b813b0e37fac4c95f67c8c0c34a58bb924
   specs:
-    omniauth (1.0.2)
+    omniauth (1.0.1)
       hashie (~> 1.2)
-      rack
+      rack (~> 1.4)
 
 GEM
   remote: https://rubygems.org/
