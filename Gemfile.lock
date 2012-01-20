@@ -141,7 +141,6 @@ PLATFORMS
 
 DEPENDENCIES
   haml (~> 3.2.0.alpha)
-  jruby-openssl
   mocha
   omniauth!
   omniauth-twitter

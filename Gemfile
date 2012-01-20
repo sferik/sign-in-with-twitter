@@ -8,10 +8,6 @@ gem 'omniauth-twitter'
 gem 'twitter'
 gem 'twitter-text'
 
-platforms :jruby do
-  gem 'jruby-openssl'
-end
-
 group :assets do
   gem 'sass-rails'
   gem 'uglifier'
