@@ -4,40 +4,45 @@
     %title
       = t("app.name")
     %meta{:charset => "utf-8"}
-    %meta{:name => "Author", :content => t("app.author")}
-    %meta{:name => "Description", :content => t("app.description")}
+    %meta{:name => "author", :content => t("app.author")}
+    %meta{:name => "description", :content => t("app.description")}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    = csrf_meta_tags
     %link{:rel => "shortcut icon", :href => "/favicon.ico"}
     / HTML5 shim, for IE6-8 support of HTML5 elements
     /[if lt IE 9]
       = javascript_include_tag "http://html5shim.googlecode.com/svn/trunk/html5.js"
-    = stylesheet_link_tag "bootstrap.min"
     = stylesheet_link_tag "application"
     = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
-    = javascript_include_tag "bootstrap-alert"
-    = csrf_meta_tags
+    = javascript_include_tag "application"
   %body
-    %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
+    %a.sash{:href => "https://github.com/sferik/sign-in-with-twitter"}
       = image_tag("fork-me-on-github.png", :alt => t("nav.sash"), :id => "sash")
-    .navbar.navbar-static
+    .navbar.navbar-fixed-top
       .navbar-inner
         .container
+          %a.btn.btn-navbar{:"data-toggle" => "collapse", :"data-target" => ".nav-collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
           = link_to("Sign in with Twitter", root_path, :class => "brand")
-          %ul.nav
-            %li
-              %a{:href => "https://dev.twitter.com/docs/auth/implementing-sign-twitter"}
-                = t("nav.documentation")
-            %li
-              %a{:href => "https://dev.twitter.com/docs/sign-twitter-resources"}
-                = t("nav.resources")
-            %li
-              %a{:href => "http://travis-ci.org/sferik/sign-in-with-twitter"}
-                = t("nav.build_status")
-            %li
-              %a{:href => "https://gemnasium.com/sferik/sign-in-with-twitter"}
-                = t("nav.dependency_status")
-            %li
-              %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
-                = t("nav.source_code")
+          .nav-collapse
+            %ul.nav
+              %li
+                %a{:href => "https://dev.twitter.com/docs/auth/implementing-sign-twitter"}
+                  = t("nav.documentation")
+              %li
+                %a{:href => "https://dev.twitter.com/docs/sign-twitter-resources"}
+                  = t("nav.resources")
+              %li
+                %a{:href => "http://travis-ci.org/sferik/sign-in-with-twitter"}
+                  = t("nav.build_status")
+              %li
+                %a{:href => "https://gemnasium.com/sferik/sign-in-with-twitter"}
+                  = t("nav.dependency_status")
+              %li
+                %a{:href => "https://github.com/sferik/sign-in-with-twitter"}
+                  = t("nav.source_code")
     .container
       - if flash[:notice]
         .alert
@@ -53,8 +58,7 @@
           = flash[:error]
         :javascript
           $(".alert").alert();
-      .content
-        = yield
+      = yield
       %footer
         %p
           = "&copy; #{Date.today.year} #{t("app.author")}.".html_safe
