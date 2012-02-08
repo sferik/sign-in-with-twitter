@@ -126,7 +126,7 @@ GEM
       faraday (~> 0.7)
       multi_json (~> 1.0)
       simple_oauth (~> 0.1)
-    twitter-text (1.4.15)
+    twitter-text (1.4.16)
       activesupport
     tzinfo (0.3.31)
     uglifier (1.2.3)
