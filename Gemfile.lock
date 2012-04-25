@@ -110,7 +110,7 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
-    twitter (2.2.3)
+    twitter (2.2.4)
       activesupport (>= 2.3.9, < 4)
       faraday (~> 0.8)
       multi_json (~> 1.3)
