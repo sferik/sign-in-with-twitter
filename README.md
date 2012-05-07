@@ -11,18 +11,18 @@ with Twitter][siwt] workflow using the [twitter gem][twitter] and [OmniAuth][].
 [twitter]: https://rubygems.org/gems/twitter
 [omniauth]: https://rubygems.org/gems/omniauth
 
-## <a name="demo"></a>Demo
+## Demo
 You can see a running version of the application at
 [http://sign-in-with-twitter.herokuapp.com/][demo].
 
 [demo]: http://sign-in-with-twitter.herokuapp.com/
 
-## <a name="installation"></a>Installation
+## Installation
     git clone git://github.com/sferik/sign-in-with-twitter.git
     cd sign-in-with-twitter
     bundle install
 
-## <a name="usage"></a>Usage
+## Usage
 Sign in with Twitter requires you to [register an app with Twitter][apps] to
 obtain OAuth credentials. Once you obtain credentials, substitute your consumer
 key and secret into the command below.
@@ -31,7 +31,7 @@ key and secret into the command below.
 
     CONSUMER_KEY=abc CONSUMER_SECRET=123 rails server
 
-## <a name="contributing"></a>Contributing
+## Contributing
 In the spirit of [free software][free-sw], **everyone** is encouraged to help
 improve this project.
 
@@ -51,7 +51,7 @@ Here are some ways *you* can contribute:
 
 [issues]: https://github.com/sferik/sign-in-with-twitter/issues
 
-## <a name="issues"></a>Submitting an Issue
+## Submitting an Issue
 We use the [GitHub issue tracker][issues] to track bugs and features. Before
 submitting a bug report or feature request, check to make sure it hasn't
 already been submitted. When submitting a bug report, please include a [Gist][]
@@ -61,7 +61,7 @@ Ideally, a bug report should include a pull request with failing specs.
 
 [gist]: https://gist.github.com/
 
-## <a name="pulls"></a>Submitting a Pull Request
+## Submitting a Pull Request
 1. Fork the project.
 2. Create a topic branch.
 3. Implement your feature or bug fix.
@@ -73,7 +73,7 @@ Ideally, a bug report should include a pull request with failing specs.
    version file. (If you want to create your own version for some reason,
    please do so in a separate commit.)
 
-## <a name="versions"></a>Supported Ruby Versions
+## Supported Ruby Versions
 This library aims to support and is [tested against][travis] the following Ruby
 implementations:
 
@@ -95,7 +95,7 @@ implementation, you will be personally responsible for providing patches in a
 timely fashion. If critical issues for a particular implementation exist at the
 time of a major release, support for that Ruby version may be dropped.
 
-## <a name="copyright"></a>Copyright
+## Copyright
 Copyright (c) 2011 Erik Michaels-Ober. See [LICENSE][] for details.
 
 [license]: https://github.com/sferik/sign-in-with-twitter/blob/master/LICENSE.md
