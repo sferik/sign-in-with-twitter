@@ -37,7 +37,7 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.1)
       multipart-post (~> 1.1)
-    haml (3.2.0.alpha.13)
+    haml (3.2.0.alpha.14)
       tilt
     hashie (1.2.0)
     hike (1.2.1)
