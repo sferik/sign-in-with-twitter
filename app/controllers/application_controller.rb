@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
       config.oauth_token = session['access_token']
       config.oauth_token_secret = session['access_secret']
     end
-    @client ||= Twitter::Client.new
   end
 
 end
