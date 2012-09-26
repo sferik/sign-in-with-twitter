@@ -18,10 +18,10 @@ class SessionsControllerTest < ActionController::TestCase
   test 'should display profile when authenticated' do
     session[:access_token] = 'abc'
     session[:access_secret] = '123'
-    stub_request(:get, 'https://api.twitter.com/1/account/verify_credentials.json').
+    stub_request(:get, 'https://api.twitter.com/1.1/account/verify_credentials.json').
       with(query: {include_entities: "true"}).
       to_return(body: File.read(File.expand_path('../../fixtures/user.json', __FILE__)))
-    stub_request(:get, "https://api.twitter.com/1/users/show.json").
+    stub_request(:get, "https://api.twitter.com/1.1/users/show.json").
       with(query: {screen_name: "sferik"}).
       to_return(body: File.read(File.expand_path('../../fixtures/user.json', __FILE__)))
     get :show
