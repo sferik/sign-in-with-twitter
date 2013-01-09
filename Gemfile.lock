@@ -31,7 +31,7 @@ GEM
     addressable (2.3.2)
     arel (3.0.2)
     builder (3.0.4)
-    crack (0.3.1)
+    crack (0.3.2)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
