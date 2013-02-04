@@ -35,7 +35,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    faraday (0.8.4)
+    faraday (0.8.5)
       multipart-post (~> 1.1)
     haml (3.2.0.rc.3)
       tilt
