@@ -3,7 +3,7 @@ ruby '2.0.0'
 
 gem 'rails', '~> 3.2'
 
-gem 'haml', '~> 3.2.0.beta'
+gem 'haml', '~> 4.0.0.rc'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'twitter'
