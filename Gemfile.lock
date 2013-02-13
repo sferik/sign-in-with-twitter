@@ -52,7 +52,7 @@ GEM
     mime-types (1.21)
     mocha (0.13.2)
       metaclass (~> 0.0.1)
-    multi_json (1.5.1)
+    multi_json (1.6.0)
     multipart-post (1.1.5)
     oauth (0.4.7)
     omniauth (1.1.2)
