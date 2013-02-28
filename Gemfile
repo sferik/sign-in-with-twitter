@@ -19,7 +19,8 @@ group :production do
 end
 
 group :test do
+  gem 'coveralls', :require => false
   gem 'mocha', :require => false
-  gem 'simplecov'
+  gem 'simplecov', :require => false
   gem 'webmock'
 end
