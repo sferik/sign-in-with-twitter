@@ -47,7 +47,7 @@ GEM
     haml (4.0.2)
       tilt
     hashie (2.0.3)
-    hike (1.2.1)
+    hike (1.2.2)
     i18n (0.6.1)
     journey (1.0.4)
     json (1.7.7)
