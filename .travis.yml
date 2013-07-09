@@ -1,5 +1,16 @@
+---
 before_install: gem install bundler --pre
 bundler_args: --without production
 language: ruby
 rvm:
-  - 2.0.0
+- 2.0.0
+deploy:
+  api_key:
+    secure: |-
+      CbAPlAkTR6ZWoQ6g7oqaWWz3U/Un/QwYeiHCGu0RIlCC6VgaPZz6MPvnlp2J
+      6mfwuPHaKsPa89rOX6S0FXp5SMiKcqWTVDeNiF3vo31XWjoVap4QjQxt3k1E
+      KRtTAVnz9XByrm/JyhnmRkZ+8Wf9ijUoRx2vl0HTB/6OcBODQFA=
+  on:
+    rvm: 2.0.0
+  provider: heroku
+  run: "rake db:migrate"
