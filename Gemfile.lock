@@ -49,7 +49,7 @@ GEM
     hike (1.2.3)
     i18n (0.6.5)
     journey (1.0.4)
-    json (1.8.0)
+    json (1.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
