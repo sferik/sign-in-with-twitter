@@ -13,3 +13,4 @@ deploy:
   on:
     rvm: 2.0.0
   provider: heroku
+  run: "rake db:migrate"
