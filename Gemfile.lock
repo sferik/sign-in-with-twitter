@@ -130,7 +130,7 @@ GEM
     twitter-text (1.6.3)
       unf (~> 0.1.0)
     tzinfo (0.3.38)
-    uglifier (2.3.0)
+    uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unf (0.1.3)
