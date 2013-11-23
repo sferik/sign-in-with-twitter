@@ -34,6 +34,9 @@ Sign in with Twitter requires you to [register an app with Twitter][apps] to
 obtain OAuth credentials. Once you obtain credentials, substitute your consumer
 key and secret into the command below.
 
+Sign in with twitter requires a callback url, otherwise you will see a "401
+Unauthorized" error. The callback url can be any url, except localhost.
+
 [apps]: http://dev.twitter.com/apps
 
     CONSUMER_KEY=abc CONSUMER_SECRET=123 rails server
