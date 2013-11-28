@@ -6,6 +6,7 @@ gem 'rails', '~> 3.2'
 gem 'haml'
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'rails_12factor'
 gem 'twitter'
 gem 'twitter-text'
 
