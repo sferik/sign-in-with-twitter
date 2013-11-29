@@ -30,7 +30,7 @@
           %td
             = number_with_delimiter @user.favorites_count
 .row
-  .span10
+  .span12
     - unless @user.status.blank?
       %blockquote
         %q{:cite => "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}"}
@@ -39,9 +39,19 @@
         %small
           = t("time.ago", :time => time_ago_in_words(@user.status.created_at).capitalize)
           = t("via.source", :source => @user.status.source).html_safe
-  .span2
+.row
+  .span6
+    %dl.dl-horizontal
+      %dt
+        Access&nbsp;token
+      %dd
+        = session['access_token']
+      %dt
+        Access&nbsp;token&nbsp;secret
+      %dd
+        = session['access_token_secret']
+  .span2.offset4
     = form_tag(signout_path, :method => 'delete') do
       %fieldset
-        .form-actions
-          %button.btn.btn-danger#sign_out
-            = t("button.sign_out")
+        %button.btn.btn-danger#sign_out
+          = t("button.sign_out")

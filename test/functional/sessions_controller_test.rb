@@ -10,14 +10,14 @@ class SessionsControllerTest < ActionController::TestCase
     request.stubs env: result
     get :create
     assert_equal 'abc', session[:access_token]
-    assert_equal '123', session[:access_secret]
+    assert_equal '123', session[:access_token_secret]
     assert_equal 'Signed in', flash[:notice]
     assert_redirected_to show_path
   end
 
   test 'should display profile when authenticated' do
     session[:access_token] = 'abc'
-    session[:access_secret] = '123'
+    session[:access_token_secret] = '123'
     stub_request(:get, 'https://api.twitter.com/1.1/account/verify_credentials.json').
       with(query: {include_entities: "true"}).
       to_return(body: File.read(File.expand_path('../../fixtures/user.json', __FILE__)))
