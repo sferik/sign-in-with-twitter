@@ -15,6 +15,10 @@ group :assets do
   gem 'uglifier'
 end
 
+group :development do
+  gem 'debugger'
+end
+
 group :production do
   gem 'puma'
 end
