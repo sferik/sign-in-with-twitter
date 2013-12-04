@@ -59,7 +59,7 @@ GEM
     http (0.5.0)
       http_parser.rb
     http_parser.rb (0.5.3)
-    i18n (0.6.8)
+    i18n (0.6.9)
     json (1.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
