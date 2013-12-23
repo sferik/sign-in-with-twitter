@@ -47,7 +47,7 @@ GEM
     debugger-ruby_core_source (1.2.4)
     descendants_tracker (0.0.3)
     docile (1.1.1)
-    equalizer (0.0.7)
+    equalizer (0.0.9)
     erubis (2.7.0)
     execjs (2.0.2)
     faraday (0.8.8)
