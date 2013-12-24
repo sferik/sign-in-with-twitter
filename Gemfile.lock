@@ -146,10 +146,10 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    twitter (5.3.1)
+    twitter (5.4.1)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
-      descendants_tracker (~> 0.0.1)
+      descendants_tracker (~> 0.0.3)
       equalizer (~> 0.0.9)
       faraday (>= 0.8, < 0.10)
       http (~> 0.5.0)
