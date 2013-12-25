@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.0'
 
 gem 'rails', '~> 4.0.1'
 
@@ -13,10 +13,6 @@ gem 'twitter-text'
 group :assets do
   gem 'sass-rails'
   gem 'uglifier'
-end
-
-group :development do
-  gem 'debugger'
 end
 
 group :production do
