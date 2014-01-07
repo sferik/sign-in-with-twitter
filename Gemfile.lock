@@ -139,7 +139,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    twitter (5.5.0)
+    twitter (5.5.1)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       descendants_tracker (~> 0.0.3)
