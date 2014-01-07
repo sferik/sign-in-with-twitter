@@ -45,7 +45,7 @@ GEM
     execjs (2.0.2)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
-    haml (4.0.4)
+    haml (4.0.5)
       tilt
     hashie (2.0.5)
     hike (1.2.3)
