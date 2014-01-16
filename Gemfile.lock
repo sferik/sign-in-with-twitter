@@ -43,8 +43,8 @@ GEM
     equalizer (0.0.9)
     erubis (2.7.0)
     execjs (2.0.2)
-    faraday (0.8.9)
-      multipart-post (~> 1.2.0)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
     haml (4.0.5)
       tilt
     hashie (2.0.5)
