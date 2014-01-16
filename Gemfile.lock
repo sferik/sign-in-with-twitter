@@ -67,9 +67,9 @@ GEM
     multi_json (1.8.4)
     multipart-post (2.0.0)
     oauth (0.4.7)
-    omniauth (1.1.4)
+    omniauth (1.2.1)
       hashie (>= 1.2, < 3)
-      rack
+      rack (~> 1.0)
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
