@@ -65,7 +65,7 @@ GEM
     mocha (1.0.0)
       metaclass (~> 0.0.1)
     multi_json (1.8.4)
-    multipart-post (1.2.0)
+    multipart-post (2.0.0)
     oauth (0.4.7)
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
