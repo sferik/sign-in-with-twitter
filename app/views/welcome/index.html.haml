@@ -1,11 +1,11 @@
 .row
   .span14
-    = form_tag "/auth/twitter", :method => "get", :html => {:class => "form-horizontal"} do
+    = form_tag '/auth/twitter', :method => 'get', :html => {:class => 'form-horizontal'} do
       %fieldset
         %legend
-          = t("app.description_html", :omniauth => t("link.omniauth_html"), :ruby_on_rails => t("link.ruby_on_rails_html"), :sign_in_with_twitter => t("link.sign_in_with_twitter_html"), :twitter_gem => t("link.twitter_gem_html"))
+          = t('app.description_html', :omniauth => t('link.omniauth_html'), :ruby_on_rails => t('link.ruby_on_rails_html'), :sign_in_with_twitter => t('link.sign_in_with_twitter_html'), :twitter_gem => t('link.twitter_gem_html'))
         .form-actions
           %p.help-block
-            = t("help.sign_in")
+            = t('help.sign_in')
           %button.btn.btn-large.btn-primary
-            = t("button.sign_in")
+            = t('button.sign_in')

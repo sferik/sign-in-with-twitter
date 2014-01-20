@@ -3,7 +3,7 @@
     %h1
       = @user.name
       %small
-        = "@#{@user.screen_name}"
+        = '@#{@user.screen_name}'
     - unless @user.description.blank?
       %h6
         = @user.description
@@ -12,13 +12,13 @@
       %thead
         %tr
           %th
-            = t("th.tweets")
+            = t('th.tweets')
           %th
-            = t("th.following")
+            = t('th.following')
           %th
-            = t("th.followers")
+            = t('th.followers')
           %th
-            = t("th.favorites")
+            = t('th.favorites')
       %tbody
         %tr
           %td
@@ -33,12 +33,12 @@
   .span12
     - unless @user.status.blank?
       %blockquote
-        %q{:cite => "https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}"}
+        %q{:cite => 'https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}'}
           %p
             = auto_link(@user.status.text.dup).html_safe
         %small
-          = t("time.ago", :time => time_ago_in_words(@user.status.created_at).capitalize)
-          = t("via.source", :source => @user.status.source).html_safe
+          = t('time.ago', :time => time_ago_in_words(@user.status.created_at).capitalize)
+          = t('via.source', :source => @user.status.source).html_safe
 .row
   .span6
     %dl.dl-horizontal
@@ -54,4 +54,4 @@
     = form_tag(signout_path, :method => 'delete') do
       %fieldset
         %button.btn.btn-danger#sign_out
-          = t("button.sign_out")
+          = t('button.sign_out')

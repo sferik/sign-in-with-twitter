@@ -19,10 +19,10 @@ class SessionsControllerTest < ActionController::TestCase
     session[:access_token] = 'abc'
     session[:access_token_secret] = '123'
     stub_request(:get, 'https://api.twitter.com/1.1/account/verify_credentials.json').
-      with(:query => {:include_entities => "true"}).
+      with(:query => {:include_entities => 'true'}).
       to_return(:body => File.read(File.expand_path('../../fixtures/user.json', __FILE__)))
-    stub_request(:get, "https://api.twitter.com/1.1/users/show.json").
-      with(:query => {:screen_name => "sferik"}).
+    stub_request(:get, 'https://api.twitter.com/1.1/users/show.json').
+      with(:query => {:screen_name => 'sferik'}).
       to_return(:body => File.read(File.expand_path('../../fixtures/user.json', __FILE__)))
     get :show
     assert_not_nil assigns :user
@@ -52,7 +52,7 @@ class SessionsControllerTest < ActionController::TestCase
 
   test 'should empty session on sign out' do
     get :destroy
-    assert_equal ["flash"], session.keys
+    assert_equal ['flash'], session.keys
     assert_equal 'Signed out', flash[:notice]
     assert_redirected_to root_path
   end
