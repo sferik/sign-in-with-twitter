@@ -33,12 +33,12 @@
   .span12
     - unless @user.status.blank?
       %blockquote
-        %q{:cite => 'https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}'}
+        %q{cite: 'https://twitter.com/#{@user.screen_name}/status/#{@user.status.id}'}
           %p
             = auto_link(@user.status.text.dup).html_safe
         %small
-          = t('time.ago', :time => time_ago_in_words(@user.status.created_at).capitalize)
-          = t('via.source', :source => @user.status.source).html_safe
+          = t('time.ago', time: time_ago_in_words(@user.status.created_at).capitalize)
+          = t('via.source', source: @user.status.source).html_safe
 .row
   .span6
     %dl.dl-horizontal
@@ -51,7 +51,7 @@
       %dd
         = session['access_token_secret']
   .span2.offset4
-    = form_tag(signout_path, :method => 'delete') do
+    = form_tag(signout_path, method: 'delete') do
       %fieldset
         %button.btn.btn-danger#sign_out
           = t('button.sign_out')
