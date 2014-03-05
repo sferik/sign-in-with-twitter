@@ -1,8 +1,8 @@
 # Sign in with Twitter
 
-[![Build Status](https://secure.travis-ci.org/sferik/sign-in-with-twitter.png?branch=master)][travis]
-[![Dependency Status](https://gemnasium.com/sferik/sign-in-with-twitter.png?travis)][gemnasium]
-[![Coverage Status](https://coveralls.io/repos/sferik/sign-in-with-twitter/badge.png?branch=master)][coveralls]
+[![Build Status](http://img.shields.io/travis/sferik/sign-in-with-twitter.svg)][travis]
+[![Dependency Status](http://img.shields.io/gemnasium/sferik/sign-in-with-twitter.svg)][gemnasium]
+[![Coverage Status](http://img.shields.io/coveralls/sferik/sign-in-with-twitter.svg)][coveralls]
 
 [travis]: http://travis-ci.org/sferik/sign-in-with-twitter
 [gemnasium]: https://gemnasium.com/sferik/sign-in-with-twitter
