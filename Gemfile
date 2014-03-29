@@ -22,6 +22,7 @@ end
 group :test do
   gem 'coveralls', require: false
   gem 'mocha', require: false
+  gem 'rubocop'
   gem 'simplecov', require: false
   gem 'webmock'
 end
