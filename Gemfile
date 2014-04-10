@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.1'
 
-gem 'rails', '~> 4.0.4'
+gem 'rails', '~> 4.1.0'
 
 gem 'haml'
 gem 'omniauth'
@@ -17,6 +17,10 @@ end
 
 group :production do
   gem 'puma'
+end
+
+group :development do
+  gem 'spring'
 end
 
 group :test do
