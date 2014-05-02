@@ -65,7 +65,7 @@ GEM
     minitest (5.3.3)
     mocha (1.0.0)
       metaclass (~> 0.0.1)
-    multi_json (1.9.2)
+    multi_json (1.9.3)
     multipart-post (2.0.0)
     naught (1.0.0)
     oauth (0.4.7)
