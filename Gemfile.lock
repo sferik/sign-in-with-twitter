@@ -40,7 +40,7 @@ GEM
       thor
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
-    docile (1.1.4)
+    docile (1.1.5)
     equalizer (0.0.9)
     erubis (2.7.0)
     execjs (2.2.0)
