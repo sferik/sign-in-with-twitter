@@ -70,8 +70,8 @@ GEM
     naught (1.0.0)
     netrc (0.7.7)
     oauth (0.4.7)
-    omniauth (1.2.1)
-      hashie (>= 1.2, < 3)
+    omniauth (1.2.2)
+      hashie (>= 1.2, < 4)
       rack (~> 1.0)
     omniauth-oauth (1.0.1)
       oauth
