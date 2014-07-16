@@ -113,7 +113,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
-    rest-client (1.7.1)
+    rest-client (1.7.2)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     rubocop (0.24.1)
