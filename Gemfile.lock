@@ -174,7 +174,7 @@ GEM
       unf (~> 0.1.0)
     tzinfo (1.2.1)
       thread_safe (~> 0.1)
-    uglifier (2.5.1)
+    uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unf (0.1.4)
