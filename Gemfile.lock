@@ -172,7 +172,7 @@ GEM
       simple_oauth (~> 0.2.0)
     twitter-text (1.9.2)
       unf (~> 0.1.0)
-    tzinfo (1.2.1)
+    tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
