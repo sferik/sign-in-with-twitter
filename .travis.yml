@@ -1,6 +1,7 @@
 ---
-before_install: gem update bundler
 bundler_args: --without production
+cache: bundler
 language: ruby
 rvm:
   - 2.1.2
+sudo: false
