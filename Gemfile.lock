@@ -48,7 +48,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     haml (4.0.5)
       tilt
-    hashie (3.3.0)
+    hashie (3.3.1)
     hike (1.2.3)
     http (0.6.2)
       http_parser.rb (~> 0.6.0)
