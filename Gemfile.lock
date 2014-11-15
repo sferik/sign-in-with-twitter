@@ -52,7 +52,7 @@ GEM
       tilt
     hashie (3.3.1)
     hike (1.2.3)
-    http (0.6.2)
+    http (0.6.3)
       http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
     i18n (0.6.11)
