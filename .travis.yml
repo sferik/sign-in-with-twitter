@@ -1,7 +1,14 @@
----
-bundler_args: --without production
+bundler_args: "--without production"
 cache: bundler
 language: ruby
 rvm:
-  - 2.2
+- 2.2
 sudo: false
+deploy:
+  api_key:
+    secure: PnaIMsr2KxqQjyjnpQKtedjVNYSZL84C8tzUGHsYOU3X+DnAYVhvLytbLlR3rDdWHwP2CNAyeeO9tMp3U0o+esgzdKhEI3a0sgfxuT60tFse1clYJF11G19llVf8HAhdNz1cMSQIFQ1PzhPhfbn1EVy0ZNofGaSueiKvQvWicu4=
+  app: sign-in-with-twitter
+  on:
+    repo: sferik/sign-in-with-twitter
+  provider: heroku
+  strategy: git
