@@ -9,6 +9,6 @@ class WelcomeControllerTest < ActionController::TestCase
       assert_select '[action=?]', '/auth/twitter'
       assert_select '[method=?]', 'get'
     end
-    assert_select 'Button', 'Sign in with Twitter'
+    assert_select 'button', 'Sign in with Twitter'
   end
 end
