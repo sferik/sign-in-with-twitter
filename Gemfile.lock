@@ -59,7 +59,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
-    haml (4.0.5)
+    haml (4.0.6)
       tilt
     hashie (3.3.2)
     hike (1.2.3)
