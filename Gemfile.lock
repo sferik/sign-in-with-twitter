@@ -136,7 +136,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.0.0)
     rake (10.4.2)
-    rdoc (4.1.2)
+    rdoc (4.2.0)
       json (~> 1.4)
     rest-client (1.7.2)
       mime-types (>= 1.16, < 3.0)
