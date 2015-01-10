@@ -102,7 +102,7 @@ GEM
     puma (2.10.2)
       rack (>= 1.1, < 2.0)
     rack (1.6.0)
-    rack-test (0.6.2)
+    rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.0)
       actionmailer (= 4.2.0)
