@@ -57,7 +57,7 @@ GEM
     execjs (2.3.0)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
-    globalid (0.3.2)
+    globalid (0.3.3)
       activesupport (>= 4.1.0)
     haml (4.0.6)
       tilt
