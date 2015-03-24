@@ -52,7 +52,7 @@ GEM
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
     docile (1.1.5)
-    equalizer (0.0.10)
+    equalizer (0.0.11)
     erubis (2.7.0)
     execjs (2.4.0)
     faraday (0.9.1)
