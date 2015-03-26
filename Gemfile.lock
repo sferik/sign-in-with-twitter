@@ -65,7 +65,7 @@ GEM
       tilt
     hashie (3.4.0)
     hike (1.2.3)
-    http (0.6.3)
+    http (0.6.4)
       http_parser.rb (~> 0.6.0)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
