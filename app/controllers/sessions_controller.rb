@@ -1,7 +1,8 @@
 class SessionsController < ApplicationController
   def create
-    session[:access_token] = request.env['omniauth.auth']['credentials']['token']
-    session[:access_token_secret] = request.env['omniauth.auth']['credentials']['secret']
+    credentials = request.env['omniauth.auth']['credentials']
+    session[:access_token] = credentials['token']
+    session[:access_token_secret] = credentials['secret']
     redirect_to show_path, notice: 'Signed in'
   end
 
