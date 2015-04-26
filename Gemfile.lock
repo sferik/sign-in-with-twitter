@@ -94,7 +94,7 @@ GEM
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
-    omniauth-oauth (1.0.1)
+    omniauth-oauth (1.1.0)
       oauth
       omniauth (~> 1.0)
     omniauth-twitter (1.1.0)
