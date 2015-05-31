@@ -80,7 +80,7 @@ GEM
     metaclass (0.0.4)
     mime-types (2.6.1)
     mini_portile (0.6.2)
-    minitest (5.6.1)
+    minitest (5.7.0)
     mocha (1.1.0)
       metaclass (~> 0.0.1)
     multipart-post (2.0.0)
@@ -227,4 +227,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.10.1
+   1.10.2
