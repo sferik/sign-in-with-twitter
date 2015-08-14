@@ -177,7 +177,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
-    tins (1.5.4)
+    tins (1.6.0)
     twitter (5.14.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
