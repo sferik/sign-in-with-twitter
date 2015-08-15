@@ -88,7 +88,7 @@ Ideally, a bug report should include a pull request with failing specs.
 [pr]: http://help.github.com/send-pull-requests/
 
 ## Supported Ruby Version
-This library aims to support and is [tested against][travis] Ruby version 1.9.3.
+This library aims to support and is [tested against][travis] Ruby version 2.2.2.
 
 If something doesn't work on this version, it should be considered a bug.
 
