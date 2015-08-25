@@ -213,7 +213,7 @@ DEPENDENCIES
   omniauth
   omniauth-twitter
   puma
-  rails (~> 4.2.2)
+  rails (~> 4.2.4)
   rails_12factor
   rubocop
   sass-rails (>= 4.0.3)
