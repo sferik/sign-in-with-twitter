@@ -64,7 +64,7 @@ GEM
     haml (4.0.7)
       tilt
     hashie (3.4.2)
-    http (0.9.7)
+    http (0.9.8)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 1.0.1)
