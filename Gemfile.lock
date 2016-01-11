@@ -208,8 +208,8 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
-    webmock (1.22.5)
-      addressable (< 2.4.0)
+    webmock (1.22.6)
+      addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
 
