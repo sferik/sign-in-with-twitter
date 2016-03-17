@@ -64,7 +64,7 @@ GEM
       tilt
     hashdiff (0.3.0)
     hashie (3.4.3)
-    http (1.0.2)
+    http (1.0.3)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 1.0.1)
