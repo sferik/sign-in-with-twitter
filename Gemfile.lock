@@ -106,7 +106,7 @@ GEM
     parser (2.3.0.7)
       ast (~> 2.2)
     powerpack (0.1.1)
-    puma (3.3.0)
+    puma (3.4.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
