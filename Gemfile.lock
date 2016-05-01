@@ -63,7 +63,7 @@ GEM
     haml (4.0.7)
       tilt
     hashdiff (0.3.0)
-    hashie (3.4.3)
+    hashie (3.4.4)
     http (1.0.4)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -229,5 +229,8 @@ DEPENDENCIES
   uglifier
   webmock
 
+RUBY VERSION
+   ruby 2.3.0p0
+
 BUNDLED WITH
-   1.11.2
+   1.12.0
