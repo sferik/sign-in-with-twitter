@@ -202,7 +202,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.2)
     unicode-display_width (1.0.5)
-    webmock (2.0.0)
+    webmock (2.0.1)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
@@ -233,4 +233,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.12.0
+   1.12.1
