@@ -203,7 +203,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
-    unicode-display_width (1.0.5)
+    unicode-display_width (1.1.0)
     webmock (2.1.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
