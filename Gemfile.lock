@@ -108,7 +108,7 @@ GEM
       ast (~> 2.2)
     pkg-config (1.1.7)
     powerpack (0.1.1)
-    puma (3.4.0)
+    puma (3.6.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
