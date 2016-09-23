@@ -63,7 +63,7 @@ GEM
     haml (4.0.7)
       tilt
     hashdiff (0.3.0)
-    hashie (3.4.4)
+    hashie (3.4.6)
     http (1.0.4)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
